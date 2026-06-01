@@ -60,8 +60,15 @@ li:hover {
   padding: 20px;
   height: 100px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: transparent;
+  height: 100px;
+  width: 100%;
 }
 
 .menu-hero-list {
@@ -234,15 +241,36 @@ li:hover {
   font-size: var(--spacing-md);
 }
 
-.aplicacoes-texto {
+.aplicacoes-all {
   height: calc(100dvh - 100px);
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-wrap: balance;
+  gap: var(--spacing-lg);
   font-size: var(--spacing-lg);
   animation: viewAnimation both;
   animation-timeline: view(70% 20%);
+}
+
+.aplicacoes-list {
+  height: calc(100dvh - 100px);
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.aplicacoes-images {
+  width: 45%;
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aplicacoes img {
+  height: 200px;
 }
 
 @keyframes viewAnimation {
