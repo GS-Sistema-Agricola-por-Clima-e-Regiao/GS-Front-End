@@ -4,7 +4,7 @@
   --spacing-lg: 40px;
   --color-green-dark: #245501;
   --color-green-light: #73a942;
-  --color-accent: #f4c95d;
+  --color-yellow: #f4c95d;
   --color-white: #ffffff;
   --color-overlay-strong: rgba(0, 0, 0, 0.8);
   --color-overlay-soft: rgba(0, 0, 0, 0.45);
@@ -127,15 +127,8 @@ li:hover {
   color: var(--color-white);
   text-align: center;
   padding: 120px 24px 40px;
-  background-image:
-    linear-gradient(
-    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
-    url(../images/problemas.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-size: var(--spacing-md);
+  background-color: var(--color-green-dark);
+  display: flex;
 }
 
 .problema-texto {
@@ -157,15 +150,8 @@ li:hover {
   color: var(--color-white);
   text-align: center;
   padding: 120px 24px 40px;
-  background-image:
-    linear-gradient(
-    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
-    url(../images/satelite.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-size: var(--spacing-md);
+  background-color: var(--color-green-dark);
+  display: flex;
 }
 
 .tecnologia-texto {
@@ -187,15 +173,8 @@ li:hover {
   color: var(--color-white);
   text-align: center;
   padding: 120px 24px 40px;
-  background-image:
-    linear-gradient(
-    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
-    url(../images/agricultores.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-size: var(--spacing-md);
+  background-color: var(--color-green-dark);
+  display: flex;
 }
 
 .objetivos-texto {
@@ -217,15 +196,8 @@ li:hover {
   color: var(--color-white);
   text-align: center;
   padding: 120px 24px 40px;
-  background-image:
-    linear-gradient(
-    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
-    url(../images/publico.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-size: var(--spacing-md);
+  background-color: var(--color-green-dark);
+  display: flex;
 }
 
 .publico-texto {
@@ -241,6 +213,14 @@ li:hover {
   margin: 0 auto;
   animation: viewAnimation both;
   animation-timeline: view(70% 20%);
+}
+
+.images {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  aspect-ratio: 16/9;
+  object-fit: fill;
 }
 
 .beneficios {
@@ -283,6 +263,8 @@ li:hover {
   text-wrap: balance;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
+
 
 .beneficios-item:hover {
   transform: translateY(-8px);
