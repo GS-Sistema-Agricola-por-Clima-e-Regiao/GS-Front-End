@@ -34,7 +34,7 @@ h2 {
 }
 
 h2 {
-  color: var(--color-accent);
+  color: var(--color-yellow);
   font-size: clamp(28px, 4vw, 42px);
 }
 
@@ -254,7 +254,7 @@ li:hover {
   width: min(100%, 280px);
   min-height: 360px;
   padding: 24px;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.153);
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 12px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
