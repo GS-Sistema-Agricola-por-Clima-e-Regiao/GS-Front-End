@@ -69,7 +69,10 @@ li:hover {
   color: var(--color-white);
   background-image:
     linear-gradient(
-    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
+      to top,
+      var(--color-overlay-strong),
+      var(--color-overlay-soft)
+    ),
     url(../images/agricultura.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -261,10 +264,10 @@ li:hover {
   animation: viewAnimation both;
   animation-timeline: view(70% 20%);
   text-wrap: balance;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
-
-
 
 .beneficios-item:hover {
   transform: translateY(-8px);
